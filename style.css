@@ -1,0 +1,94 @@
+body,html{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 3.9fr;
+    height: 100%;
+}
+
+.header{
+    background-color: rgba(238, 247, 243, 0.97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    box-shadow: 1px 1px 10px rgb(150, 149, 149);
+}
+
+.btn-section{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#add-btn{
+    border: none;
+    background-color: aquamarine;
+    border-radius: 10px;
+    font-size: 25px;
+    height: 50px;
+    width: 160px;
+}
+
+#add-btn:hover{
+    background-color: rgb(175, 201, 192);
+}
+
+
+#book-sec{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,350px));
+    gap: 15px;
+    justify-content: center;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.new{
+    background-color: rgb(206, 206, 206);
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.new button{
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+.details{
+    font-size: 20px;
+}
+
+.notread{
+    background-color: rgb(250, 136, 136);
+}
+
+.notread:hover{
+    background-color: rgb(255, 104, 104);
+}
+
+.read{
+    background-color: rgb(151, 255, 151);
+}
+
+.read:hover{
+    background-color: aqua;
+}
