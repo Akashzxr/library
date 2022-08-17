@@ -4,11 +4,12 @@ let add_btn = document.querySelector('#add-btn');
 let booksec = document.querySelector('#book-sec');
 
 
-
-function book(bookname,author,pages){
+class library{
+constructor(bookname,author,pages){
  this.name = bookname;
  this.author = author;
  this.pages = pages; 
+}
 }
 
 
@@ -17,7 +18,7 @@ function addBookToLibrary() {
    let bookname = prompt("enter book name");
    let author = prompt("enter author name");
    let pages = prompt("enter no of pages");
-   let books = new book(bookname,author,pages);
+   let books = new library(bookname,author,pages);
    mylibrary.push(books);
    length = mylibrary.length;
 
